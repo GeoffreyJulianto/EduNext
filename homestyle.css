@@ -1,0 +1,547 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body{
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0;
+    background-color: #EDEDED;
+}
+
+.headerbar{
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerlogo{
+    padding-top: 2rem;
+}
+
+.headerbarmiddle{
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "YOPQ" 300;
+    display: flex;
+    color: #290849;
+    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.loginbutton{
+    width: 12rem;
+    height: 3.5rem;
+    background-color: #ECB602;
+    margin-right: 5rem;
+    font-family: "Lalezar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 0;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    font-size: 2.5rem;
+}
+
+a:link{
+    color:#290849;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#290849;
+    text-decoration: none;
+}
+
+/* ------------------------------------Content1------------------------------------ */
+.konten1{
+    margin-top: 1rem;
+    width: 100%;
+    height: 90vh;
+    /* background-color: red; */
+}
+
+.teksgede{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.teksgede h1{
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8rem;
+    color:#290849;
+}
+
+.indent-line {
+    display: block;        
+    text-indent: 10rem;   
+}
+.indent-line2{
+    display: block;        
+    text-indent: 40rem;   
+}
+
+
+.photo1{
+    width: 15rem;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+.photo2{
+    width: 15rem;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    transform: translateX(-5rem); 
+}
+
+.linebackground{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 5rem;
+}
+
+.konten1bawah{
+    width: 100%;
+    height: 20%;
+    /* background-color: red; */
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.konten1bawahkiri{
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "YOPQ" 300;
+}
+
+.line1{
+    padding-bottom: 1rem;
+}
+
+.konten1bawahkiri p{
+    padding-bottom: 1rem;
+}
+
+.konten1bawahkiri h1{
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color:#290849;
+    padding-bottom: 1rem;
+}
+
+.konten1bawahkanan{
+    padding-top: 5rem;
+    margin-right: 10rem;
+}
+
+.checkitoutbutton{
+    width: 24rem;
+    height: 5rem;
+    background-color: #290849;
+    font-family: "Lalezar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 0;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    font-size: 3.1rem;
+}
+
+.arrowbawah{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2.5rem;
+}
+
+
+/* ------------------------------------Content2------------------------------------ */
+.konten2{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    /* background-color: blue; */
+}
+
+.kotakkonten2{
+    width: 100%;
+    height: 100%; 
+    background-image: url('./img/scholarshipImage1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.konten2bagianatas{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.konten2bagiantengah{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 13rem;
+    margin-left: 3rem;
+}
+
+.konten2bagiantengah p{
+    margin-bottom: 10rem;
+}
+
+/* ------------------------------------Content3------------------------------------ */
+.konten3{
+    width: 100%;
+    height: 15vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* background-color: red; */
+}
+
+.konten3bagianatas{
+    width: 100%;
+    height: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color:#290849;
+}
+
+.konten3bagianbawah{
+    width: 100%;
+    height: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oooh Baby", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color:#290849;
+}
+
+/* ------------------------------------Content4------------------------------------ */
+
+.konten4{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    /* background-color: red; */
+    display: flex;
+}
+
+.konten4kiri{
+    /* background-color: blue; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.konten4kirigaris{
+    width: 0.2%;
+    height: 100%; 
+    background-image: url('./img/line3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.konten4kiriisi{
+    /* background-color: aqua; */
+    width: 99.8%;
+    height: 100%;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    color:#290849;
+}
+
+.isi1{
+    padding-top: 3rem;
+    height: 30%;
+    width: 100%;
+    /* background-color: red; */
+    text-align: left;
+}
+
+.isi1 p{
+    margin-left: 25%;
+}
+
+.isi1atas{
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color:#290849;
+}
+
+.isi1bawah{
+    color:#818181;
+}
+
+.isi2{
+    margin-top: 2rem;
+    width: 70%;
+    height: 20%;
+    /* background-color: red; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.isi3{
+    margin-top: 1rem;
+    width: 70%;
+    height: 20%;
+    /* background-color: blue; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 4rem;
+}
+
+.isi4{
+    margin-top: 1rem;
+    width: 70%;
+    height: 20%;
+    /* background-color: blue; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 8rem;
+}
+
+.konten4kanan{
+    /* background-color: green; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.konten4kananisi{
+    width: 99%;
+    height: 100%; 
+    background-image: url('./img/konten4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.konten4kanangaris{
+    width: 0.2%;
+    height: 100%; 
+    background-image: url('./img/line3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-left: 0.8%;
+}
+
+/* ------------------------------------Content5------------------------------------ */
+
+.konten5{
+    margin-top: 5rem;
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(to bottom, #EDEDED, #551f5d);
+}
+
+.konten5header{
+    text-align: center;
+    color:#290849;
+    height: 20%;
+    /* background-color: yellow; */
+}
+
+.konten5header p{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.konten5header h1{
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+.konten5card{
+    /* background-color: red; */
+    width: 100%;
+    height: 80%;
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+}
+
+.testimonials-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;                     /* space between the two cards */
+    margin-top: 4rem;              /* space from the heading above */
+}
+
+.testimonial-card {
+    width: 38%;
+    background: rgba(0, 0, 0, 0.2); /* transparent-ish */
+    backdrop-filter: blur(8px);           /* frosted glass effect */
+    border-radius: 1rem;
+    padding: 2.5rem;
+    color: white;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.quote {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+/* Yellow vertical line on left */
+.quote::before {
+    content: "";
+    width: 4px;
+    height: 80%;
+    background-color: #ECB602;
+    position: absolute;
+    left: -1rem;
+    top: 10%;
+    border-radius: 4px;
+}
+
+.name {
+    font-weight: bold;
+    color: #ECB602;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.award {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+/* ------------------------------------Footer------------------------------------ */
+
+footer{
+    width: 100%;
+    height: 70vh;
+    background-color: #3D3D3D;
+    color: #ffffff;
+    font-family: "Kumbh Sans", sans-serif;
+    display: flex;
+}
+
+.footerleft{
+    width: 70%;
+    height: 100%;
+    /* background-color: red; */
+    padding: 2rem;
+    padding-left: 4rem;
+}
+
+.footerlinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    font-size: 1.4rem;
+}
+
+.footergianttext{
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.3rem;
+    color:#ffffff; 
+    margin-top: 2rem;
+    flex: 1;
+    overflow: visible;
+    /* background-color: yellow; */
+}
+
+.footergianttext h1 {
+    white-space: nowrap;
+}
+
+.footerleftsmalltext{
+    margin-top: 2rem;
+}
+
+.footerright{
+    padding: 2rem;
+    width: 30%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+.footerright img{
+    width: 90%;
+    height: auto;
+}
+
