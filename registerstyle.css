@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body{
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0;
+    background-color: #EDEDED;
+}
+
+.headerbar{
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerlogo{
+    padding-top: 2rem;
+}
+
+.headerbarmiddle{
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "YOPQ" 300;
+    display: flex;
+    color: #290849;
+    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.loginbutton{
+    width: 12rem;
+    height: 3.5rem;
+    background-color: #ECB602;
+    margin-right: 5rem;
+    font-family: "Lalezar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 0;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    font-size: 2.5rem;
+}
+
+a:link{
+    color:#290849;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#290849;
+    text-decoration: none;
+}
+
+/* ------------------------------------IsiPage------------------------------------ */
+
+/* Background Layer */
+.register-bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("./img/registerimg/register.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.register-text {
+    position: absolute;
+    font-size: 14vw;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.871);
+    letter-spacing: 5px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.register-text.top {
+    top: -10%;
+    left: 0%;
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.register-text.bottom {
+    bottom: -0%;
+    right: -30%;
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.register-text.rectangle {
+    bottom: -0%;
+    left: 7%;
+}
+
+
+
+/* Centered Form Layer */
+.register-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    z-index: 10;
+}
+
+/* White Form Card */
+.form-card {
+    width: 520px;
+    background: white;
+    padding: 2.5rem;
+    padding-top: 3rem;
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Two-column name fields */
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+label {
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #474747;
+}
+
+input {
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    border: 1.5px solid #474747;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+input:focus {
+    border-color: #6c2ba8;
+}
+
+input::placeholder {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(186,186,186);
+}
+
+/* Terms row */
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+}
+
+.terms a {
+    color: #55185D;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* Register Button */
+.register-btn {
+    width: 100%;
+    padding: 0.7rem;
+    background: #55185D;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background: #571f8a;
+}
