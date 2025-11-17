@@ -70,6 +70,80 @@ a:visited{
 }
 
 /* ------------------ Konten -----------------*/
+.bagianatas{
+    width: 100%;
+    height: 90vh;
+    /* background-color: red; */
+    text-align: center;
+    padding-top: 10rem;
+    color: #290849;
+    font-family: "Lalezar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+}
+
+.bagianatas h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 8rem;
+    line-height: 0.75;
+}
+
+.spaced{
+    margin-top: 6rem;
+}
+
+.bagianatas .lastline{
+    font-family: "Oooh Baby", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.8rem;
+    color: #505050;
+}
+
+.bagianbawah{
+    width: 100%;
+    height: 95vh;
+    /* background-color: red; */
+    color: #290849;
+    font-family: "Kumbh Sans", sans-serif;
+    display: flex;
+}
+
+.bagianbawah .kiri{
+    width: 52%;
+    height: 100%;
+    /* background-color: yellow; */
+    border-radius: 1.5%;
+    background-image: url(./img/aboutimg/about.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    z-index: -1;
+}
+
+.bagianbawah .kanan{
+    width: 48%;
+    height: 100%;
+    padding-left: 3rem;
+    /* background-color: yellow; */
+}
+
+.bagianbawah .kanan h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+.bagianbawah .kanan p{
+    font-size: 1.3rem;
+}
+
 
 /* ------------------ Footer -----------------*/
 footer{
