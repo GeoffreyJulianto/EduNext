@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body{
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0;
+    background-color: #EDEDED;
+}
+
+.headerbar{
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerlogo{
+    padding-top: 2rem;
+}
+
+.headerbarmiddle{
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "YOPQ" 300;
+    display: flex;
+    color: #290849;
+    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.loginbutton{
+    width: 12rem;
+    height: 3.5rem;
+    background-color: #ECB602;
+    margin-right: 5rem;
+    font-family: "Lalezar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 0;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    font-size: 2.5rem;
+}
+
+a:link{
+    color:#290849;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#290849;
+    text-decoration: none;
+}
+/* --------------------- Content ------------------------------ */
+.scholarship-wrapper {
+    width: 100%;
+    padding: 2rem 9rem;
+    position: relative;
+    background-image: url("./img/listimg/vector.png");
+    background-size: 110%;   /* zoomed OUT a bit */
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+/* BACKGROUND SHAPE */
+.vectorimg {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* TITLE */
+.sch-title {
+    font-family: "Notable", sans-serif;
+    font-size: 110px;
+    color: #290849;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+}
+
+.lineimg{
+    transform: translate(62%,-80%);
+    padding-bottom: 1rem;
+}
+
+
+/* SEARCH BAR */
+.searchbar-container {
+    width: 40%;
+    height: 3rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background: #D9D9D9;
+    border-radius: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+.search-icon {
+    opacity: 0.5;
+    font-size: 1.4rem;
+}
+
+/* GRID */
+.sch-card-grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 2rem;
+}
+
+/* CARD */
+.sch-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 85%;          /* keep your preferred width */
+    margin: 0 auto;      /* centers the card inside its grid column */
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    position: relative;
+    min-height: 430px;   /* 👈 add this */
+}
+
+/* CARD IMAGE PLACEHOLDER */
+.placeholder-img {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.sch-name {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.details-btn {
+    position: absolute;
+    top: 6rem;
+    right: 2rem;
+    border: none;
+    background: #2B2B2B;
+    color: #ffffff;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sch-subtitle {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.sch-list {
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.7rem;
+}
+
+.color-dots {
+    margin-top: 1rem;
+    position: absolute;
+    bottom: 3%;
+    left: 3;
+}
+
+.color-dots span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px;
+    background: #8B0000;
+    border-radius: 50%;
+}
+
+/* 3 different colors */
+.color-dots span:nth-child(2) {
+    background: #3A5F0B;
+}
+
+.color-dots span:nth-child(3) {
+    background: #C69214;
+}
+
+/* BOOKMARK ICON */
+.bookmark {
+    width: 12px;
+    height: 18px;
+    background: #2E2E2E;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    border-radius: 3px;
+}
+
+/* PAGINATION */
+.pagination {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* CHOOSE YOUR PATH */
+.choose-path {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-family: "Oooh Baby", cursive;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.7;
+}

@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body{
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0;
+    background-color: #EDEDED;
+}
+
+.headerbar{
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerlogo{
+    padding-top: 2rem;
+}
+
+.headerbarmiddle{
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "YOPQ" 300;
+    display: flex;
+    color: #290849;
+    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.loginbutton{
+    width: 12rem;
+    height: 3.5rem;
+    background-color: #ECB602;
+    margin-right: 5rem;
+    font-family: "Lalezar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 0;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    font-size: 2.5rem;
+}
+
+a:link{
+    color:#290849;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#290849;
+    text-decoration: none;
+}
+/* --------------------- Content ------------------------------ */
+
+.page-wrapper {
+    display: flex;
+    padding: 3rem 5rem;
+    gap: 4rem;
+}
+
+/* ===========================
+   LEFT SECTION
+=========================== */
+
+.left-section {
+    width: 60%;
+    padding-right: 3rem;
+    border-right: 3px solid #DAB12D;
+}
+
+.welcome-title {
+    font-family: "Notable", sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color:#290849;
+    line-height: 0.9;
+    margin-bottom: 3rem;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #E2E2E2;
+    font-size: 16px;
+}
+
+.edit-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.lastline{
+    display: flex;
+    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.premium-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #290849;
+    text-decoration: underline;
+    align-items: center;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+a.premium-link:link,
+a.premium-link:visited {
+    text-decoration: underline;
+    color: #290849;
+}
+/* SAVE BUTTON */
+.save-btn {
+    background: #290849;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 30%;
+    font-size: 2rem;
+    font-family: "Lalezar", sans-serif;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.arrow {
+    font-size: 20px;
+}
+
+
+/* ===========================
+   RIGHT SECTION
+=========================== */
+
+.right-section {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-card {
+    background: #ffffff;
+    padding: 25px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.img-edit-btn {
+    position: absolute;
+    top: 40%;
+    right: 40px;
+    background: #00000070;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.caption {
+    margin-top: 10px;
+    color: #888;
+    font-size: 15px;
+}

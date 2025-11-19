@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body{
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0;
+    background-color: #EDEDED;
+}
+
+.headerbar{
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerlogo{
+    padding-top: 2rem;
+}
+
+.headerbarmiddle{
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "YOPQ" 300;
+    display: flex;
+    color: #290849;
+    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.loginbutton{
+    width: 12rem;
+    height: 3.5rem;
+    background-color: #ECB602;
+    margin-right: 5rem;
+    font-family: "Lalezar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 0;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    font-size: 2.5rem;
+}
+
+a:link{
+    color:#290849;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#290849;
+    text-decoration: none;
+}
+
+/* -----------------------Content--------------------------------- */
+.fullarea{
+    width: 100%;
+    height: 110vh;
+    /* background-color: red; */
+    display: flex;
+}
+
+.login-text {
+    position: absolute;
+    font-size: 12vw;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.871);
+    letter-spacing: 5px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.login-text.bottom {
+    bottom: 0%;
+    left: 4%;
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transform: translate(0, 50%);
+    overflow: hidden;
+}
+
+.login-text .purple-stroke {
+    -webkit-text-stroke: 2px #290849;
+}
+
+.bagiankiri{
+    width: 35%;
+    height: 100%;
+    /* background-color: yellow; */
+    padding: 5rem;
+}
+
+.tekslogin{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #474747;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.labelinput{
+    margin-top: 2.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #474747;
+    font-size: 1.5rem;
+    padding-bottom: 0.7rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.2rem;
+    border: 0px;
+}
+
+input {
+    padding: 0.4rem 0.7rem;
+    border-radius: 8px;
+    border: 0px solid #474747;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+input::placeholder {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(186,186,186);
+}
+
+.rememberdanforgot{
+    margin-top: 2rem;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+    color: #474747;
+}
+
+.rememberdanforgot a{
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+    color: #474747;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.signinbutton{
+    margin-top: 2rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.signin-btn {
+    width: 70%;
+    padding: 0.7rem;
+    background: #55185D;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.signin-btn:hover {
+    background: #571f8a;
+}
+
+.ortext{
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #474747;
+    font-weight: 700;
+}
+
+.googlebutton{
+    margin-top: 1rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.google-btn {
+    width: 70%;
+    padding: 0.7rem;
+    background: #ffffff;
+    color: black;
+    font-weight: 300;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.googleimage{
+    /* Set a visible width */
+    width: 1.5rem; 
+    /* Maintain aspect ratio */
+    height: auto; 
+    margin-right: 1rem;
+}
+
+.registertext{
+    padding-top: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #474747;
+    font-weight: 700;
+}
+
+.registertext a{
+    text-decoration: underline;
+}
+
+
+.beasiswagambar{
+    width: 65%;
+    height: 100%;
+}
