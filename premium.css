@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0;
+    background-color: #EDEDED;
+}
+
+.headerbar{
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerlogo{
+    padding-top: 2rem;
+}
+
+.headerbarmiddle{
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "YOPQ" 300;
+    display: flex;
+    color: #290849;
+    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+a:link{
+    color:#290849;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#290849;
+    text-decoration: none;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    margin-right: 5rem;
+}
+
+.judul{
+    text-align: center;
+    background: #55185DB3;
+    color: white;
+    padding: 5rem 2rem;
+}
+
+.judul h2 {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.judul h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: "Notable", sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+.judul a {
+    text-decoration: none;
+}
+
+.btn-premium {
+    background: #fbbf24;
+    color: #000000;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.btn-premium:hover {
+    background: #f59e0b;
+}
+
+.features {
+    padding: 4rem 5%;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.features h3 {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 0.1rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: "Kumbh Sans", sans-serif;
+
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    color: #290849;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-family: "Notable", sans-serif;
+    letter-spacing: 2px;
+}
+
+.features-table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background: #f5f5f5;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.table-header div {
+    padding: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.table-header div:first-child {
+    text-align: left;
+}
+
+.table-header div:last-child {
+    background: #290849;
+    color: white;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border-bottom: 1px solid #e5e5e5;
+    align-items: center;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.table-row div {
+    padding: 1.5rem;
+}
+
+.table-row div:first-child {
+    text-align: left;
+    font-weight: 600;
+    color: #000000;
+}
+
+.check {
+    color: #10b981;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cross {
+    color: #d1d5db;
+    font-size: 1.5rem;
+}
+
+
+.pricing {
+    padding: 4rem 5%;
+    text-align: center;
+    background: white;
+}
+
+.pricing h3 {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.pricing h2 {
+    font-size: 2.5rem;
+    color: #290849;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-family: "Notable", sans-serif;
+    letter-spacing: 2px;
+}
+
+.pricing-card.featured h3{
+    color: white;
+}
+
+.pricing-card.featured div{
+    color: white;
+}
+
+.pricing-card div{
+    color: #290849;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pricing-cards p{
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.pricing-card {
+    background: white;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 2.5rem 2rem;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.pricing-card.featured {
+    background: #290849;
+    color: white;
+    border: none;
+    transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.08) translateY(-5px);
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: #fbbf24;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.pricing-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: "Notable", sans-serif;
+    letter-spacing: 2px;
+}
+
+.period {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.pricing-card p {
+    margin: 1.5rem 0;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    background: white;
+    color: #000000;
+    padding: 1rem 2rem;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #f59e0b;
+    color: white;
+}
+
+.pricing-card.featured .btn-secondary {
+    background: #fbbf24;
+    border-color: #FFFFFF;
+    color: #000000;
+}
+
+.pricing-card.featured .btn-secondary:hover {
+    background: #f59e0b;
+}
+
+/* Bagian Testimoni */
+.testimonials {
+    padding: 4rem 5%;
+    text-align: center;
+    background: #55185DB3;
+    color: white;
+}
+
+.testimonials h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-family: "Notable", sans-serif;
+    letter-spacing: 2px;
+}
+
+.testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: left;
+    border-left: 4px solid #fbbf24;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.author {
+    margin-top: 1rem;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.author strong {
+    color: #fbbf24;
+    font-size: 1.1rem;
+}
+
+.author span {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}

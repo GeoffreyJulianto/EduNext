@@ -1,0 +1,305 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  padding-top: 1rem;
+  margin: 0;
+  background-color: #ededed;
+}
+
+.headerbar {
+  padding: 1rem;
+  margin: 0;
+  width: 100%;
+  height: 8vh;
+  background-color: #ededed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerlogo {
+  padding-top: 2rem;
+}
+
+.headerbarmiddle {
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "YOPQ" 300;
+  display: flex;
+  color: #290849;
+  width: 20%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.loginbutton {
+  width: 12rem;
+  height: 3.5rem;
+  background-color: #ecb602;
+  margin-right: 5rem;
+  font-family: "Lalezar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: 0;
+  color: #ffffff;
+  border-radius: 1.5rem;
+  font-size: 2.5rem;
+}
+
+a:link {
+  color: #290849;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #290849;
+  text-decoration: none;
+}
+
+.container {
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  max-width: 1400px;
+  margin: 30px auto;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.sidebar {
+  font-family: "Kumbh Sans", sans-serif;
+  width: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu {
+  background-color: white;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sidebar-item:hover {
+  background-color: #f9f9f9;
+}
+
+.sidebar-item-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.sidebar-item-subtitle {
+  font-size: 11px;
+  color: #999;
+}
+
+.yellow-divider {
+  background-color: #ffc107;
+  height: 40px;
+  width: 100%;
+}
+
+.forum-banner {
+  font-family: "Notable", sans-serif;
+  background: linear-gradient(135deg, #4a148c 0%, #1a0033 100%);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  min-height: 400px;
+}
+
+.main-content {
+  flex: 1;
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.date-badge {
+  font-family: "Notable", sans-serif;
+  position: absolute;
+  top: 125px;
+  right: 80px;
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.date-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a148c;
+}
+
+.date-day {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4a148c;
+  text-transform: uppercase;
+}
+
+.create-post-section {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.post-input {
+  font-family: "Kumbh Sans", sans-serif;
+  flex: 1;
+  padding: 15px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+.create-post-btn {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #2d0052;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.post-card {
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+}
+
+.post-thumbnail {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-color: #ddd;
+}
+
+.post-content {
+  flex: 1;
+}
+
+.post-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.author-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.author-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+}
+
+.author-time {
+  font-size: 11px;
+  color: #999;
+}
+
+.post-stats {
+  display: flex;
+  gap: 25px;
+  font-size: 13px;
+  color: #666;
+}
+
+.post-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.action-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.pagination span {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.pagination .active {
+  font-weight: bold;
+  text-decoration: underline;
+}

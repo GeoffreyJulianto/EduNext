@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forum</title>
+    <link rel="stylesheet" href="forumstyle.css" />
+
+    <!-- Ini buat Lalezar (tombol login) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ini buat Kumbh Sans (header bagian tengah) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lalezar&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ini buat notable font (tulisan gede) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Notable&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ini buat bebas neue (tulisan di gambar konten2) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ini buat Oooh Baby (tulisan for you di konten3) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="headerbar">
+      <img
+        src="img/header/Group 17.png"
+        class="headerlogo"
+        alt="EduNext Logo"
+      />
+      <div class="headerbarmiddle">
+        <a href="./home.html">Home</a>
+        <a href="./aboutus.html">About Us</a>
+        <a href="./forum.html">Forum</a>
+      </div>
+      <button class="loginbutton">LOGIN.</button>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <div class="sidebar-menu">
+          <div class="sidebar-item">
+            <span>⭐</span>
+            <div>
+              <div class="sidebar-item-title">Newest and recent</div>
+              <div class="sidebar-item-subtitle">posts here</div>
+            </div>
+          </div>
+          <div class="sidebar-item">
+            <span>💬</span>
+            <div>
+              <div class="sidebar-item-title">Recommended</div>
+              <div class="sidebar-item-subtitle">posts for you</div>
+            </div>
+          </div>
+          <div class="sidebar-item">
+            <span>↓</span>
+            <div>
+              <div class="sidebar-item-title">Following</div>
+              <div class="sidebar-item-subtitle">people you know</div>
+            </div>
+          </div>
+        </div>
+        <div class="yellow-divider"></div>
+        <div class="forum-banner">FORUM</div>
+      </aside>
+
+      <main class="main-content">
+        <div class="date-badge">
+          <div class="date-number" id="currentDate"></div>
+          <div class="date-day" id="currentDay"></div>
+        </div>
+
+        <script>
+          // Set today's date
+          const today = new Date();
+          const day = today.getDate();
+          const month = today.getMonth() + 1;
+          const year = today.getFullYear();
+          const dayName = today
+            .toLocaleDateString("en-US", { weekday: "long" })
+            .toUpperCase();
+
+          document.getElementById(
+            "currentDate"
+          ).textContent = `${day} / ${month} / ${year}`;
+          document.getElementById("currentDay").textContent = dayName;
+        </script>
+
+        <div class="create-post-section">
+          <div class="user-avatar"></div>
+          <input
+            type="text"
+            class="post-input"
+            placeholder="share what's on your mind..."
+          />
+          <button class="create-post-btn">Create Post</button>
+        </div>
+
+        <div class="post-card">
+          <img
+            src="img/forumimg/post1.jpg"
+            class="post-thumbnail"
+            alt="Post thumbnail"
+          />
+          <div class="post-content">
+            <div class="post-title">
+              Top 10 easiest scholarships to achieve!
+            </div>
+            <div class="post-author">
+              <div class="author-avatar"></div>
+              <div>
+                <div class="author-name">Joe Mata</div>
+                <div class="author-time">3 hours ago</div>
+              </div>
+            </div>
+            <div class="post-stats">
+              <span>137,350 views</span>
+              <span>63,550 likes</span>
+              <span>56 comments</span>
+            </div>
+          </div>
+          <div class="post-actions">
+            <div class="action-icon">♡</div>
+            <div class="action-icon">💬</div>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <img
+            src="img/forumimg/post2.jpg"
+            class="post-thumbnail"
+            alt="Post thumbnail"
+          />
+          <div class="post-content">
+            <div class="post-title">
+              I can't believe I got it! Thanks EduNext!
+            </div>
+            <div class="post-author">
+              <div class="author-avatar"></div>
+              <div>
+                <div class="author-name">Mie Ayam</div>
+                <div class="author-time">5 hours ago</div>
+              </div>
+            </div>
+            <div class="post-stats">
+              <span>145,333 views</span>
+              <span>23,333 likes</span>
+              <span>300 comments</span>
+            </div>
+          </div>
+          <div class="post-actions">
+            <div class="action-icon">♡</div>
+            <div class="action-icon">💬</div>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <img
+            src="img/forumimg/post3.jpg"
+            class="post-thumbnail"
+            alt="Post thumbnail"
+          />
+          <div class="post-content">
+            <div class="post-title">Here's me at my favorite Uni!</div>
+            <div class="post-author">
+              <div class="author-avatar"></div>
+              <div>
+                <div class="author-name">Putu Kampung</div>
+                <div class="author-time">1 day ago</div>
+              </div>
+            </div>
+            <div class="post-stats">
+              <span>24,840 views</span>
+              <span>2,530 likes</span>
+              <span>34 comments</span>
+            </div>
+          </div>
+          <div class="post-actions">
+            <div class="action-icon">♡</div>
+            <div class="action-icon">💬</div>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <img
+            src="img/forumimg/post4.jpg"
+            class="post-thumbnail"
+            alt="Post thumbnail"
+          />
+          <div class="post-content">
+            <div class="post-title">
+              For every like, I'll apply to a new Uni!
+            </div>
+            <div class="post-author">
+              <div class="author-avatar"></div>
+              <div>
+                <div class="author-name">ScholarEnjoyer</div>
+                <div class="author-time">2 days ago</div>
+              </div>
+            </div>
+            <div class="post-stats">
+              <span>34,101 views</span>
+              <span>2,785 likes</span>
+              <span>120 comments</span>
+            </div>
+          </div>
+          <div class="post-actions">
+            <div class="action-icon">♡</div>
+            <div class="action-icon">💬</div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <span>≪</span>
+          <span>‹</span>
+          <span class="active">1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>...</span>
+          <span>›</span>
+          <span>≫</span>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
